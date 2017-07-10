@@ -11,16 +11,20 @@ h1{
 input{
 	width:1000px; 
 }
-.add{
 
-}
 .form{
 	display:flex;
 	justify-content: space-between;
 }
 .add{
 	background: purple;
-	border-radius:10px 10px;
 	border: 2px solid blue;
 	color:pink;
+	width: 100px;
+	height: 27px;
+}
+.add:hover{
+	background: pink;
+	color:purple	;
+
 }
