@@ -5,7 +5,12 @@ alert("Bienvenue Jeune Padawan");
 
 $("body").append("<p></p>");
 
+
+/* ajout de li 
+
 $("ul").append("<li></li>");
+
+*/
 
 // classe filtre = filtre
 // le data = data-action => done => todo => all
@@ -13,3 +18,10 @@ $("ul").append("<li></li>");
 // tache a ajouter = tacheAjout
 // classe de liste = liste
 
+$(".add").click(function(){
+
+	var textTache = $("#tacheAjout").val();
+
+	$("ul").append("<li class = 'todo'> "  + textTache + " " +"<button class = 'check'>Valider</button></li>");
+
+});
