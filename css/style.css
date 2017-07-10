@@ -1,9 +1,11 @@
 body{
 	font-family: 'Open', sans-serif;
-	background: #CAF871;
+	
 }
 h1{
 	text-align: center;
+	
+	background-color: grey;
 }
 .done{
 	text-decoration: line-through;
@@ -32,6 +34,7 @@ input{
 	color:pink;
 	width: 100px;
 	height: 27px;
+
 }
 .add:hover{
 	background: pink;
@@ -47,4 +50,8 @@ input{
 	background: purple;
 	border: 2px solid blue;
 	color:pink;	
+	width: 150px;
+	height: 50px;
+	font-family: arial;
+	font-size: 1.5em;
 }
