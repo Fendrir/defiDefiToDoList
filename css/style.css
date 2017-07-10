@@ -2,15 +2,19 @@ body{
 	font-family: 'Open', sans-serif;
 	background: #CAF871;
 }
+
 h1{
 	text-align: center;
 }
+
 .done{
 	text-decoration: line-through;
 }
+
 input{
 	width:1000px; 
 }
+
 .liste{
 	list-style-type: none;
 	display: flex;
@@ -18,14 +22,17 @@ input{
 	align-items: center;
 
 }
+
 .form{
 	display:flex;
 	justify-content: space-between;
 }
+
 .zobilamouche{
 	display:flex;
 	justify-content: space-around;
 }
+
 .add{
 	background: purple;
 	border: 2px solid blue;
@@ -33,16 +40,19 @@ input{
 	width: 100px;
 	height: 27px;
 }
+
 .add:hover{
 	background: pink;
 	color:purple	;
 
 }
+
 .check{
 	background: purple;
 	border: 2px solid blue;
 	color:pink;	
 }
+
 .filtre{
 	background: purple;
 	border: 2px solid blue;
