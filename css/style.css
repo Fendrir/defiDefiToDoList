@@ -1,0 +1,26 @@
+body{
+	font-family: 'Open', sans-serif;
+	background: #CAF871;
+}
+h1{
+	text-align: center;
+}
+.done{
+	text-decoration: line-through;
+}
+input{
+	width:1000px; 
+}
+.add{
+
+}
+.form{
+	display:flex;
+	justify-content: space-between;
+}
+.add{
+	background: purple;
+	border-radius:10px 10px;
+	border: 2px solid blue;
+	color:pink;
+}
