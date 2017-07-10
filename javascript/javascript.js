@@ -24,7 +24,7 @@ $(".add").click(function(){
 	var textTache = $("#tacheAjout").val();
 	$("#tacheAjout").val("");
 
-	$(".liste").append("<li class = 'todo'> "  + textTache + " " +"<button class='check'>Valider</button></li>");
+	$(".liste").append("<li class = 'todo'> "  + textTache + " " +"<button class='check'>fait</button></li>");
 	$(".check").click(function(){
 
 	$(this).parent("li").addClass("done");

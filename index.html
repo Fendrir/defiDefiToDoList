@@ -8,24 +8,33 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
 <h1>TO DO LIST</h1>
-<ul class="liste">
-	
-	
-</ul>
+
+<div class="main">
+
+
+
 <div class ="zobilamouche">
 	<button class="filtre" data-action="done">Faites</button>
 	<button class="filtre" data-action="todo">A faire</button>
 	<button class="filtre" data-action="all">Toutes</button>
 </div>
+
 <div class ="form">	
     <div>
-        <label for="nom">Nom de la tache:</label>
-        <input type="text" id="tacheAjout" />
+        <!--<label for="nom">Nom de la tache:</label>-->
+        <input type="text" id="tacheAjout"  placeholder="Ajouter une nouvelle tâche" />
     </div>
     <div class="button">
         <button class="add" >Ajouter</button>
     </div>
+</div>
+
+<ol class="liste">
+	
+</ol>
+
 </div>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="javascript/javascript.js"></script>
