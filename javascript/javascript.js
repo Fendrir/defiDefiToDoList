@@ -22,6 +22,7 @@ $("ul").append("<li></li>");
 $(".add").click(function(){
 
 	var textTache = $("#tacheAjout").val();
+	$("#tacheAjout").val("");
 
 	$(".liste").append("<li class = 'todo'> "  + textTache + " " +"<button class='check'>Valider</button></li>");
 	$(".check").click(function(){
