@@ -11,10 +11,20 @@ h1{
 input{
 	width:1000px; 
 }
+.liste{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
+}
 .form{
 	display:flex;
 	justify-content: space-between;
+}
+.zobilamouche{
+	display:flex;
+	justify-content: space-around;
 }
 .add{
 	background: purple;
@@ -27,4 +37,14 @@ input{
 	background: pink;
 	color:purple	;
 
+}
+.check{
+	background: purple;
+	border: 2px solid blue;
+	color:pink;	
+}
+.filtre{
+	background: purple;
+	border: 2px solid blue;
+	color:pink;	
 }
