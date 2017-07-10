@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 alert("Bienvenue Jeune Padawan");
 
 // ajout de la balise <p>
@@ -23,19 +23,26 @@ $(".add").click(function(){
 
 	var textTache = $("#tacheAjout").val();
 
-	$("ul").append("<li class = 'todo'> "  + textTache + " " +"<button class = 'check'>Valider</button></li>");
-
-});
-=======
-
-
-$(".check").click(function(){
+	$(".liste").append("<li class = 'todo'> "  + textTache + " " +"<button class='check'>Valider</button></li>");
+	$(".check").click(function(){
 
 	$(this).parent("li").addClass("done");
 	$(this).parent("li").removeClass("todo");
-	console.log($(this).parent("li").data("status"));
 	$(this).remove();
 });
+
+});
+
+// ======================================= 
+
+ /* $(".check").click(function(){
+
+	$(this).parent("li").addClass("done");
+	$(this).parent("li").removeClass("todo");
+	$(this).remove();
+});
+
+*/
 
 $(".filtre").click(function(){
 	switch($(this).data("action")){
@@ -54,5 +61,5 @@ $(".filtre").click(function(){
 
 	}
 
-})
->>>>>>> eb23d9115a0140ad48ee2e961d7f0a3a5c3dc80e
+});
+
