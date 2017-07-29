@@ -24,15 +24,22 @@ $(".add").click(function(){
 	var textTache = $("#tacheAjout").val();
 	$("#tacheAjout").val("");
 
-	$(".liste").append("<li class = 'todo'> "  + textTache + " " +"<button class='check'>fait</button></li>");
-	$(".check").click(function(){
-
+	$(".liste").append("<li class = 'todo'> "  + textTache + "</li>");
+	
 	$(this).parent("li").addClass("done");
-	$(this).parent("li").removeClass("todo");
-	$(this).remove();
+	
 });
 
-});
+
+ // rayer avec double clic
+$(document).on('dblclick','li', function(){
+        $(this).parent("li").addClass("done"); 
+		$(this).parent("li").removeClass("todo");
+		$(this).remove();
+
+      });
+      
+      
 
 // ======================================= 
 
@@ -63,9 +70,6 @@ $(".filtre").click(function(){
 	}
 
 
-$(document).on('dblclick','li', function(){
-        $(this).toggleClass('strike').fadeOut('slow');    
-      });
 
 });
 
