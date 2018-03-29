@@ -1,23 +1,7 @@
-
-alert("Bienvenue Jeune Padawan");
-
-// ajout de la balise <p>
-
+var state = 'all';
 
 $("body").append("<p></p>");
 
-
-/* ajout de li 
-
-$("ul").append("<li></li>");
-
-*/
-
-// classe filtre = filtre
-// le data = data-action => done => todo => all
-//  ajouter une ligne class = add
-// tache a ajouter = tacheAjout
-// classe de liste = liste
 
 $(".add").click(function(){
 
@@ -25,28 +9,18 @@ $(".add").click(function(){
 	$("#tacheAjout").val("");
 
 	$(".liste").append("<li class = 'todo'> "  + textTache + " " +"<button class='check'>Valider</button></li>");
+	changeState(state);
 	$(".check").click(function(){
 
 	$(this).parent("li").addClass("done");
 	$(this).parent("li").removeClass("todo");
 	$(this).remove();
+	changeState(state);
 });
 
 });
-
-// ======================================= 
-
- /* $(".check").click(function(){
-
-	$(this).parent("li").addClass("done");
-	$(this).parent("li").removeClass("todo");
-	$(this).remove();
-});
-
-*/
-
-$(".filtre").click(function(){
-	switch($(this).data("action")){
+function changeState(state){
+	switch(state){
 		case "done":
 			$(".done").show();
 			$(".todo").hide();
@@ -62,5 +36,10 @@ $(".filtre").click(function(){
 
 	}
 
+}
+$(".filtre").click(function(){
+	changeState($(this).data("action"));
+	state=$(this).data("action");
+	$('#titre').text(state);
 });
 
